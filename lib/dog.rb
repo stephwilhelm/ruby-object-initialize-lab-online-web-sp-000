@@ -17,7 +17,13 @@ class Dog
   end
 
   def breed
-    @breed
+    @breed.map do |breed|
+    	if (@breed == breed)
+    	 puts @breed
+    	else
+    	puts "Mutt"
+    	end
+    end
   end
 
 end
