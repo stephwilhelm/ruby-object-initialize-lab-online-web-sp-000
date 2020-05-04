@@ -1,5 +1,5 @@
 class Dog
-  def initialize(name, breed)
+  def initialize(name, breed = "Mutt")
     @name = name
     @breed = breed
   end
@@ -17,13 +17,7 @@ class Dog
   end
 
   def breed
-    @breed.map do |breed|
-    	if @breed == nil
-    	   puts "Mutt"
-    	else
-         puts @breed
-    	end
-    end
+    @breed
   end
 
 end
