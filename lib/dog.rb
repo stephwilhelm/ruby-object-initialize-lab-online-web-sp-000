@@ -18,7 +18,7 @@ class Dog
 
   def breed
     @breed.map do |breed|
-    	if (@breed == nil)
+    	if @breed == nil
     	   puts "Mutt"
     	else
          puts @breed
